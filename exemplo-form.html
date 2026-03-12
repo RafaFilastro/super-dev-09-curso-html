@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            color: white;
+            background-color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="link-servidor" method="get">
+        <label for="produto">Produto *</label>
+        <select id="produto" name="produto" required>
+            <option disabled selected value="">Escolha seu produto</option>
+            <option value="iPhone">iPhone 15 Pro Max</option>
+            <option value="pizza">Pizza Top</option>
+            <option value="hog-dog">Cachorro Quente</option>
+        </select>
+
+        <label for="quantidade">Quantidade *</label>
+        <input type="number" id="quantidade" name="quantidade" min="1" max="10" required>
+
+        <label for="preco">Preço Unitário *</label>
+        <input type="number" id="preco" name="preco" step="0.50" required>
+
+        <label for="email">email *</label>
+        <input type="email" id="email" name="email" required placeholder="meu-email@gmail.com">
+
+        <label for="observacao">Observação</label>
+        <textarea name="observacao" id="observacao"></textarea>
+
+        <button type="submit">Enviar Pedido</button>
+    </form>
+</body>
+
+</html>
