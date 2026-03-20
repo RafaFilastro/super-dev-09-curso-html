@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<h1>
+    <a href="exercicio02.html">Home</a>
+</h1>
+<body>
+<h1>Interesses em Tecnologia</h1>
+
+<form>
+    <div>
+        <label for="campo-nome">Nome *</label>
+        <input type="text" id="campo-nome" name="Nome" required placeholder="Digite seu nome">
+    </div>
+    <div>
+        <label for="campo-email">Email *</label>
+        <input type="email" id="campo-email" name="email" required placeholder="meu-email@meu-email.com">
+    </div>
+    <div>
+        <label for="campo-idade">Idade *</label>
+        <input type="number" id="campo-idade" name="idade" required placeholder="Digite sua idade">
+    </div>
+    <div>
+        <label for="campo-cidade">Cidade *</label>
+        <input type="text" id="campo-cidade" name="cidade" required placeholder="Digite sua cidade">
+    </div>
+    <div>
+    <label for="campo-interesse">Interesse *</label>
+        <select id="campo-interesse" name="interesse" required>
+            <option disabled selected value="">Selecione uma opção</option>
+            <option value="programacao">Programação</option>
+            <option value="robotica">Robótica</option>
+            <option value="inteligencia-artificial">Inteligência Artificial</option>
+            <option value="design">Design</option>
+            <option value="seguranca-da-informacao">Segurança da informação</option>
+        </select>
+    </div>
+    <div>
+        <label for="nivel-interesse">Nivel de Interesse *</label>
+            <select id="area-interesse" name="interesse" required>
+                <option disabled selected value="">Selecione uma opção</option>
+                <option value="baixo">Baixo</option>
+                <option value="medio">Médio</option>
+                <option value="alto">Alto</option>
+            </select>
+    </div>
+    <div>
+        <label for="observacao">Observação</label>
+        <textarea name="observacao" id="observacao"></textarea>
+    </div>
+    <div>
+        <button type="submit">Enviar pedido</button>
+    </div>
+</form>
+</body>
+</html>
